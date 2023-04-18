@@ -5,5 +5,5 @@ export const library = {
         const asd = request.json()
 
         return asd
-    }
+    },
 }

@@ -1,7 +1,7 @@
 img {
   max-width: 100%;
 }
-
+//Container div
 .container {
   display: flex;
   align-items: center;
@@ -9,6 +9,36 @@ img {
   height: 100vh;
   background: #444;
 }
+
+// Button
+.bn3637 {
+  
+  
+  
+  padding: 0.7rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn36 {
+  border: 5%;
+  border-color: #edd60f;
+  background-color: black;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn36:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+//Button
 
 .card {
   position: relative;
@@ -71,4 +101,76 @@ img {
   0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
   50% { opacity: 1; filter: blur(2px); }
   100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+}
+
+//Select
+
+.content-select select {
+  appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select {
+  max-width: 250px;
+  position: relative;
+}
+
+.content-select select{
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.content-select select{
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 10%;
+  border-radius: 0;
+  border-color: #edd60f;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.content-select select:hover{
+	background: #d4e124;
+  border-color: black;
+  color: black;
+}
+
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+
+.select {
+  padding: 5%;
+  border: 5%;
+  border-radius: 10%;
+  border-color: #edd60f;
+  background-color: black;
+  color: white;
+
+}
+
+.content-select:hover i{
+	margin-top: 3px;
 }
