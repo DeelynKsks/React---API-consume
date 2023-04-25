@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Button() {
+function Button(props) {
+
+  const { action } = props
+
   return (
     <div>
-        <button className='bn3637 bn36'>Traer</button>
+        <button onClick={action}>Show data</button>
     </div>
   )
 }

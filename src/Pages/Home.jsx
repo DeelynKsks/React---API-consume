@@ -9,20 +9,18 @@ function Home() {
 
   const url = "https://mhw-db.com/armor"
 
-  const data = async() => {
-      const traer = await library.consume(url)
-        .then(a => console.log(a))
-        .catch(err => console.log(err))
+  const handleButtonShowData = async () => {
+    const data = await library.consume(url)
+                                  .then(a => a)
+                                  .catch(err => err)
 
-      return setDataApi(traer)
-    }
+    setDataApi(data)
+  }
 
   return (
     <div className='container'>
       <div>
-        <Select />
-        <br />
-        <Button />
+        <Button action={handleButtonShowData}/>
       </div>
       {dataApi.map((datos, index) => {
         console.log(datos[index])
